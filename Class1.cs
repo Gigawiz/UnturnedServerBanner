@@ -41,7 +41,7 @@ namespace UnturnedServerBanner
         public string map = SDG.Unturned.Provider.map;
         public string maxplayers = SDG.Unturned.Provider.maxPlayers.ToString();
         public string PvP = SDG.Unturned.Provider.PvP.ToString();
-        public string ipAddy = "0.0.0.0"; //GetPublicIP();
+        public string ipAddy = GetPublicIP();
 
         protected override void Load()
         {

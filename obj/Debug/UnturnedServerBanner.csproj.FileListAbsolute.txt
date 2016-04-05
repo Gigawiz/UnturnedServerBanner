@@ -3,3 +3,8 @@ c:\users\ben\documents\visual studio 2010\Projects\UnturnedServerBanner\Unturned
 c:\users\ben\documents\visual studio 2010\Projects\UnturnedServerBanner\UnturnedServerBanner\obj\Debug\UnturnedServerBanner.csprojResolveAssemblyReference.cache
 c:\users\ben\documents\visual studio 2010\Projects\UnturnedServerBanner\UnturnedServerBanner\obj\Debug\UnturnedServerBanner.dll
 c:\users\ben\documents\visual studio 2010\Projects\UnturnedServerBanner\UnturnedServerBanner\obj\Debug\UnturnedServerBanner.pdb
+D:\Files from Old Windows Installs\laptop files\documents\GitHub\UnturnedServerBanner\bin\Debug\UnturnedServerBanner.dll
+D:\Files from Old Windows Installs\laptop files\documents\GitHub\UnturnedServerBanner\bin\Debug\UnturnedServerBanner.pdb
+D:\Files from Old Windows Installs\laptop files\documents\GitHub\UnturnedServerBanner\obj\Debug\UnturnedServerBanner.csprojResolveAssemblyReference.cache
+D:\Files from Old Windows Installs\laptop files\documents\GitHub\UnturnedServerBanner\obj\Debug\UnturnedServerBanner.dll
+D:\Files from Old Windows Installs\laptop files\documents\GitHub\UnturnedServerBanner\obj\Debug\UnturnedServerBanner.pdb

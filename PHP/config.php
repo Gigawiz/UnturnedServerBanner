@@ -4,9 +4,9 @@ $auto_add = true; //set to false if you want users to register their server manu
 $api_keys = true; //set this to false if you don't require users to have an api key to update information
 //only set these if using mysql mode
 $db_host = "localhost"; //your database host, usually "localhost"
-$db_user = ""; //username with access to the database
-$db_pass = ""; //password for said user
-$db_name = ""; //the name of your database
+$db_user = "rawrfuls"; //username with access to the database
+$db_pass = "4fSHwYghwVi33S91"; //password for said user
+$db_name = "unturned_live-server-stats"; //the name of your database
 
 if ($use_mysql) //make sure we want to use mysql, otherwise, don't try to connect to a database
 {
@@ -62,6 +62,8 @@ function update_server($db, $name, $ip, $map, $curplayers, $maxplayers, $gamemod
 	//let's make sure we don't get hacked by unescaping strings
 	$vernam = $db->real_escape_string($name);
 	$verip = $db->real_escape_string($ip);
+	$verip = str_replace("\n", "", $verip);
+	$verip = str_replace("\r", "", $verip);
 	$vermap = $db->real_escape_string($map);
 	$vercurply = $db->real_escape_string($curplayers);
 	$vermaxply = $db->real_escape_string($maxplayers);
@@ -88,6 +90,8 @@ function create_server($db, $name, $ip, $map, $curplayers, $maxplayers, $gamemod
 	//let's make sure we don't get hacked by unescaping strings
 	$vernam = $db->real_escape_string($name);
 	$verip = $db->real_escape_string($ip);
+	$verip = str_replace("\n", "", $verip);
+	$verip = str_replace("\r", "", $verip);
 	$vermap = $db->real_escape_string($map);
 	$vercurply = $db->real_escape_string($curplayers);
 	$vermaxply = $db->real_escape_string($maxplayers);
