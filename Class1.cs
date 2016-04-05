@@ -77,6 +77,9 @@ namespace UnturnedServerBanner
         public static string GetPublicIP()
         {
             string externalip = new WebClient().DownloadString("http://icanhazip.com");
+            externalip = externalip.Replace("\n", String.Empty);
+            externalip = externalip.Replace("\r", String.Empty);
+            externalip = externalip.Replace("\t", String.Empty);
             return externalip;
         }
 

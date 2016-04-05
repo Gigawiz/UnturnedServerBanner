@@ -31,7 +31,7 @@ SQL;
 	$arr    = array();
 	while($row = $result->fetch_assoc()){
 		$arr[0]['name'] = $row['name'];
-		$arr[0]['font-size'] = '27';
+		$arr[0]['font-size'] = '16';
 		$arr[0]['color'] = 'white';
 		
 		$arr[1]['name'] = "IP: ".$row['ip'];
@@ -62,8 +62,6 @@ function update_server($db, $name, $ip, $map, $curplayers, $maxplayers, $gamemod
 	//let's make sure we don't get hacked by unescaping strings
 	$vernam = $db->real_escape_string($name);
 	$verip = $db->real_escape_string($ip);
-	$verip = str_replace("\n", "", $verip);
-	$verip = str_replace("\r", "", $verip);
 	$vermap = $db->real_escape_string($map);
 	$vercurply = $db->real_escape_string($curplayers);
 	$vermaxply = $db->real_escape_string($maxplayers);
@@ -90,8 +88,6 @@ function create_server($db, $name, $ip, $map, $curplayers, $maxplayers, $gamemod
 	//let's make sure we don't get hacked by unescaping strings
 	$vernam = $db->real_escape_string($name);
 	$verip = $db->real_escape_string($ip);
-	$verip = str_replace("\n", "", $verip);
-	$verip = str_replace("\r", "", $verip);
 	$vermap = $db->real_escape_string($map);
 	$vercurply = $db->real_escape_string($curplayers);
 	$vermaxply = $db->real_escape_string($maxplayers);
